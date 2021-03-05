@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="DegistirKelime" fx:controller="com.ege.KelimeDegistirController" maxHeight="66" maxWidth="431" minHeight="66" minWidth="431" prefHeight="66" prefWidth="431.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <SplitPane dividerPositions="0.34130434782608693" prefHeight="44.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="132.0" prefWidth="134.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Değiştirilecek Kelime" wrappingWidth="211.13671875">
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="122.0" prefWidth="320.0">
+               <children>
+                  <TextField fx:id="degistirilcekInput" layoutX="4.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.34130434782608693" prefHeight="36.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="144.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neyle Değiştirilecek?" wrappingWidth="139.13671875">
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="85.0" prefWidth="320.0">
+               <children>
+                  <TextField fx:id="neyleDegistirilcekInput" layoutX="5.0" layoutY="4.0" prefHeight="25.0" prefWidth="289.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <Button fx:id="degistirButon" onAction="#DegistirButon" mnemonicParsing="false" prefHeight="25.0" prefWidth="462.0" text="Değiştir" BorderPane.alignment="CENTER">
+      </Button>
+   </bottom>
+</BorderPane>
